@@ -29,6 +29,12 @@ class Pokemon
      */
     private $abilities = [];
 
+    public function __construct($name, $ability)
+    {
+        $this->name = $name;
+        array_push($this->abilities, $ability);
+    }
+
     public function getId(): ?int
     {
         return $this->id;
